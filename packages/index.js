@@ -1,15 +1,18 @@
-import { tButton } from './t-button/index'
+import { E_CustomForm, } from './e-custom-form'
+import { E_CustomTable, } from './e-custom-table'
 import 'element-ui/lib/theme-chalk/index.css';
 const components = [
-  tButton
+  E_CustomForm,
+  E_CustomTable,
 ]
 const install = Vue => components.forEach(component => Vue.use(component))
 typeof window !== 'undefined' && window.Vue && install(window.Vue)
 
 export {
-  tButton
+  E_CustomForm,
+  E_CustomTable,
 }
 
-export default{
+export default {
   install
 }

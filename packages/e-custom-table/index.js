@@ -1,5 +1,7 @@
-import tButton from "./e-custom-table.vue"
-tButton.install = function(Vue){
-  Vue.component(tButton.name, tButton)
+import E_CustomTable from "./e-custom-table.vue"
+E_CustomTable.install = function(Vue){
+  Vue.component(E_CustomTable.name, E_CustomTable)
 }
-export default tButton
+export {
+  E_CustomTable
+}

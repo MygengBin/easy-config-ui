@@ -1,5 +1,7 @@
-import tButton from "./e-custom-form.vue"
-tButton.install = function(Vue){
-  Vue.component(tButton.name, tButton)
+import E_CustomForm from "./e-custom-form.vue"
+E_CustomForm.install = function(Vue){
+  Vue.component(E_CustomForm.name, E_CustomForm)
 }
-export default tButton
+export {
+  E_CustomForm,
+}

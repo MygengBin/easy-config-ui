@@ -4,18 +4,16 @@
       <el-table-column
         v-if="!item.custom"
         :key="index + ''"
-        :prop="item.key"
-        :label="item.name"
         :fixed="item.fixed"
         :width="item.width"
+        v-bind="item"
       ></el-table-column>
       <el-table-column
         v-else
         :key="index + '2'"
-        :prop="item.key"
-        :label="item.name"
         :fixed="item.fixed"
         :width="item.width"
+        v-bind="item"
       >
         <template #default="{ $index }">
           <slot :name="item.key" :index="$index"></slot>
@@ -31,6 +29,7 @@ Object.entries({ Table, TableColumn }).forEach(item=>{
   Vue.use(item[1])
 })
   export default {
+    name: 'E_CustomTable',
     props: {
       list: {
         type: Array,
