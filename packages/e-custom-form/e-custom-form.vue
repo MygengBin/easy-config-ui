@@ -44,9 +44,6 @@
   </el-form>
 </template>
 <script>
-import Vue from 'vue'
-import { Form, FormItem, Input, Select, Option } from 'element-ui'
-  ;[Form, FormItem, Input, Select, Option].forEach((item) => Vue.use(item))
 // import wangEditor from '@/components/wangEditor/index.vue'
 import FormResult from './FormResult'
 export default {
