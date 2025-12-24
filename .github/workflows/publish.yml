@@ -14,7 +14,6 @@ jobs:
           registry-url: 'https://registry.npmjs.org/'
 
       - run: npm i
-      - run: npm ci
       
       - name: Publish Package
         run: npm publish
