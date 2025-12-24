@@ -12,7 +12,8 @@ jobs:
         with:
           node-version: '20'
           registry-url: 'https://registry.npmjs.org/'
-          
+
+      - run: npm i
       - run: npm ci
       
       - name: Publish Package
