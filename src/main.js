@@ -1,7 +1,8 @@
 import Vue from 'vue'
 import App from './App.vue'
-import VfUI from '../packages/index.js';
-Vue.use(VfUI);
+import EasyConfigUI from '../packages/index.js';
+Vue.use(EasyConfigUI);
+/* 这里的只是当前环境测试 */
 Vue.config.productionTip = false
 
 new Vue({
