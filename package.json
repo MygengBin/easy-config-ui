@@ -4,7 +4,7 @@
   "main": "lib/index.umd.min.js",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "vue-cli-service build --target lib --name index --dest lib packages/index.js",
     "lint": "vue-cli-service lint",
     "lib": "node config/common/lib.js"
   },
