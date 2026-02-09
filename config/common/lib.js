@@ -9,7 +9,7 @@ let run = function () {
   exec(`git pull`);	
   console.log(chalk.blueBright(`编译组件总包`));
   // 编译组件总包
-  exec(`vue-cli-service build --target lib --formats=umd-min --name index --no-clean --dest lib packages/index.js`);
+  exec(`npm run build`);
   console.log(chalk.green(`编译已完成`));
   compPublish();
 };
