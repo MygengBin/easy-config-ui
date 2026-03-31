@@ -20,6 +20,11 @@ export default {
           title: '标题',
           type: FormResult.INPUT,
         },
+        {
+          key: 'ee2',
+          title: '标题2',
+          type: FormResult.INPUT,
+        },
       ],
       tableList: [
         { first: '111', second: '122', },
